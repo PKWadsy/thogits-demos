@@ -170,7 +170,7 @@
       <ul class="pd-ticks"><li>Usually within one working day</li><li>Attach sketches or photos</li><li>Accept your quote online</li></ul>
       <p class="pd-help">Rather talk to someone? Call <a href="tel:094245088">09 424 5088</a> or pop in to the shop.</p>
     </div>
-    <div class="pd-widget"><iframe data-pcd-embed src="https://app.thogits.com/p/01M6ZRYWCWD93MZXGVSKJKM7EM?embed=1" title="Request a quote" style="height:1000px" loading="lazy"></iframe></div>
+    <div class="pd-widget"><iframe data-pcd-embed src="https://app.thogits.com/p/01M6ZRYWCWD93MZXGVSKJKM7EM?embed=1" title="Request a quote" style="height:720px" loading="lazy"></iframe></div>
   </div>
 </section>
 
@@ -230,7 +230,7 @@
 </div>
 <script>
 /* Peninsula ordering embeds: the embedded pages post their height, so each frame grows to fit with no inner scrollbar.
-   When a customer moves to the next step inside a frame, the frame's top is scrolled back into view. */
+   When a customer moves to another step inside a frame, the card's top is scrolled back into view. */
 (function () {
   window.addEventListener("message", function (e) {
     var d = e.data; if (!d || d.source !== "peninsula-embed" || typeof d.height !== "number") return;
@@ -239,6 +239,7 @@
       var f = frames[i]; if (f.contentWindow !== e.source) continue;
       if (d.height > 150) f.style.height = Math.min(d.height + 4, 20000) + "px";
       if (d.type === "load") { if (f.getAttribute("data-loaded") && f.getBoundingClientRect().top < 0) f.scrollIntoView({ behavior: "smooth", block: "start" }); f.setAttribute("data-loaded", "1"); }
+      if (d.type === "step") { var card = f.closest(".pd-widget") || f, top = card.getBoundingClientRect().top; if (top < 70 || top > window.innerHeight * 0.6) card.scrollIntoView({ behavior: "smooth", block: "start" }); }
     }
   });
 })();
