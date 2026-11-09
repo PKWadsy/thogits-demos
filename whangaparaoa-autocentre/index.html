@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Whangaparaoa Autocentre | Car servicing, WOF and repairs in Stanmore Bay</title>
+<meta name="description" content="Family-run garage on Karepiro Drive, Stanmore Bay. Servicing, WOF, diagnostics and repairs for all makes and models, including European cars. Book your vehicle in online.">
+<link rel="icon" href="favicon.ico">
+<style>
+:root{--accent:#0098F8;--accent-deep:#0077C8;--navy:#102060;--ink:#272727;--muted:#5b6270;--canvas:#F6F6F6;--line:#e6e8ec;--coral:#F0523D}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--accent-deep)}
+img{max-width:100%;display:block}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+/* Header */
+.hdr{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:2px solid var(--accent)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:76px}
+.hdr img{height:46px;width:auto}
+.nav{display:flex;align-items:center;gap:26px}
+.nav a{color:var(--navy);text-decoration:none;font-weight:600;font-size:15px}
+.nav a:hover{color:var(--accent-deep)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;border:0;cursor:pointer}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 6px 18px rgba(0,152,248,.28)}
+.btn-primary:hover{background:var(--accent-deep);color:#fff}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.55)}
+.btn-ghost:hover{background:rgba(255,255,255,.2);color:#fff}
+.nav .btn{min-height:42px;padding:0 18px;color:#fff}
+@media(max-width:860px){.nav a:not(.btn){display:none}.hdr .wrap{height:64px}.hdr img{height:36px}}
+/* Hero */
+.hero{position:relative;overflow:hidden;color:#fff;background:radial-gradient(1200px 500px at 85% -10%,rgba(0,152,248,.55),transparent 60%),linear-gradient(135deg,#0c1a52 0%,#102060 55%,#16307e 100%)}
+.hero::after{content:"";position:absolute;inset:auto -10% -1px -10%;height:90px;background:#fff;border-radius:50% 50% 0 0/100% 100% 0 0}
+.hero .wrap{position:relative;z-index:1;padding-top:88px;padding-bottom:140px;display:grid;grid-template-columns:1.25fr .9fr;gap:48px;align-items:center}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#bfe3ff;margin-bottom:14px}
+.hero h1{font-size:52px;line-height:1.08;margin:0 0 18px;letter-spacing:-.02em}
+.hero p.lead{font-size:19px;color:#dbe7ff;margin:0 0 30px;max-width:560px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.badges{display:grid;gap:14px}
+.badge{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:16px 18px}
+.badge .ic{flex:none;width:40px;height:40px;border-radius:12px;background:rgba(0,152,248,.28);display:inline-flex;align-items:center;justify-content:center}
+.badge b{display:block;font-size:16px}
+.badge span{font-size:14px;color:#c9d6f2}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;padding-top:56px;padding-bottom:110px}.hero h1{font-size:38px}.hero p.lead{font-size:17px}}
+/* Sections */
+section{padding:84px 0}
+.sec-head{max-width:720px;margin:0 auto 44px;text-align:center}
+.sec-head h2{font-size:36px;line-height:1.15;color:var(--navy);margin:0 0 12px;letter-spacing:-.015em}
+.sec-head p{color:var(--muted);font-size:17px;margin:0}
+.alt{background:var(--canvas)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:0 1px 2px rgba(16,32,96,.04)}
+.card h3{margin:14px 0 8px;font-size:19px;color:var(--navy)}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.card .ic{width:46px;height:46px;border-radius:14px;background:#e8f5ff;color:var(--accent-deep);display:inline-flex;align-items:center;justify-content:center}
+@media(max-width:900px){.grid3{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.grid3{grid-template-columns:1fr}section{padding:60px 0}.sec-head h2{font-size:28px}}
+/* Packages */
+.pk{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:860px;margin:36px auto 0}
+.pk .card{padding:28px 30px}
+.pk .tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-deep);background:#e8f5ff;border-radius:999px;padding:4px 10px}
+.pk .card.pop{border-color:var(--accent);box-shadow:0 10px 30px rgba(0,152,248,.14)}
+.pk ul{list-style:none;padding:0;margin:14px 0 0}
+.pk li{display:flex;gap:10px;align-items:center;padding:6px 0;font-size:15px}
+.pk li .ic{width:22px;height:22px;border-radius:50%;background:#e8f5ff;color:var(--accent-deep);display:inline-flex;align-items:center;justify-content:center;flex:none}
+.fine{max-width:860px;margin:18px auto 0;font-size:13px;color:var(--muted);text-align:center}
+@media(max-width:700px){.pk{grid-template-columns:1fr}}
+/* About */
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+.about h2{font-size:34px;line-height:1.15;color:var(--navy);margin:0 0 16px}
+.about p{color:#3e3e3e;font-size:16px}
+.ticks{display:grid;gap:12px;margin-top:22px}
+.ticks div{display:flex;gap:12px;align-items:flex-start;font-size:15px}
+.ticks .ic{flex:none;width:26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;display:inline-flex;align-items:center;justify-content:center;margin-top:1px}
+.quotes{display:grid;gap:16px}
+.quote{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px 24px}
+.quote p{margin:0 0 10px;font-size:15px;color:#3e3e3e}
+.quote cite{font-style:normal;font-weight:700;font-size:13px;color:var(--navy);letter-spacing:.04em}
+.stars{display:inline-flex;gap:2px;color:#f5a524;margin-bottom:8px}
+@media(max-width:900px){.about{grid-template-columns:1fr;gap:36px}}
+/* Booking */
+.book{background:linear-gradient(180deg,#f2f8ff 0%,#fff 100%)}
+.book-grid{display:grid;grid-template-columns:1fr minmax(0,560px);gap:56px;align-items:start}
+.book-copy h2{font-size:36px;line-height:1.15;color:var(--navy);margin:0 0 14px}
+.book-copy p{color:var(--muted);font-size:17px}
+.steps{display:grid;gap:16px;margin:26px 0}
+.step{display:flex;gap:14px;align-items:flex-start}
+.step .n{flex:none;width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800;display:inline-flex;align-items:center;justify-content:center}
+.step b{display:block;color:var(--navy)}
+.step span{font-size:15px;color:var(--muted)}
+.call{display:flex;gap:12px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px;max-width:420px}
+.call .ic{flex:none;width:42px;height:42px;border-radius:12px;background:#e8f5ff;color:var(--accent-deep);display:inline-flex;align-items:center;justify-content:center}
+.call a{font-weight:800;font-size:19px;color:var(--navy);text-decoration:none}
+.book-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px 26px 18px;box-shadow:0 18px 48px rgba(16,32,96,.10)}
+.book-card h3{margin:0 0 4px;font-size:22px;color:var(--navy)}
+.book-card .sub{margin:0 0 16px;color:var(--muted);font-size:14px}
+.book-card iframe{display:block;width:100%;border:0;min-height:900px;background:transparent}
+.book-card .note{font-size:12px;color:#8a93a3;margin:10px 0 0;text-align:center}
+@media(max-width:960px){.book-grid{grid-template-columns:1fr;gap:32px}.book-card{padding:20px 16px 14px}}
+/* Contact */
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:28px;align-items:stretch}
+.info{display:grid;gap:14px;align-content:start}
+.info .row{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.info .ic{flex:none;width:42px;height:42px;border-radius:12px;background:#e8f5ff;color:var(--accent-deep);display:inline-flex;align-items:center;justify-content:center}
+.info b{display:block;color:var(--navy)}
+.info a{text-decoration:none}
+.map{border-radius:18px;overflow:hidden;border:1px solid var(--line);min-height:360px}
+.map iframe{width:100%;height:100%;min-height:360px;border:0;display:block}
+@media(max-width:860px){.contact{grid-template-columns:1fr}}
+/* Footer */
+footer{background:#0c1a52;color:#c9d6f2;padding:40px 0;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center}
+footer a{color:#fff}
+footer .built{color:#8fa3d1;font-size:13px}
+svg{display:block}
+</style>
+</head>
+<body>
+<header class="hdr">
+  <div class="wrap">
+    <a href="#top" aria-label="Whangaparaoa Autocentre home"><img src="logo.png" alt="Whangaparaoa Autocentre" width="118" height="46"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#about">About us</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-primary" href="#book">Book online</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Family-run garage · Stanmore Bay</span>
+      <h1>Trust our experienced team with your vehicle.</h1>
+      <p class="lead">Professional, quality workmanship right here in the heart of Whangaparaoa. Over 30 years of experience, trusted by Coastie families for years.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#book">Book your vehicle in</a>
+        <a class="btn btn-ghost" href="tel:094244294">Call 09 424 4294</a>
+      </div>
+    </div>
+    <div class="badges">
+      <div class="badge"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></span><div><b>MTA member, authorised WOF provider</b><span>And we guarantee our workmanship.</span></div></div>
+      <div class="badge"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg></span><div><b>Free courtesy cars and early drop-offs</b><span>We make servicing as convenient as possible.</span></div></div>
+      <div class="badge"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><div><b>We call before we do extra work</b><span>Clear options and pricing, no surprises at pick-up.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Everything your vehicle needs, under one roof</h2>
+      <p>From mechanical and electrical faults to general WOF and servicing, we service and repair all makes and models, including European cars.</p>
+    </div>
+    <div class="grid3">
+      <div class="card"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span><h3>Vehicle servicing</h3><p>Standard, premium, European, and diesel, van and 4x4 servicing with quality consumables.</p></div>
+      <div class="card"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span><h3>Warrant of Fitness</h3><p>Authorised WOF provider. We will talk you through anything that needs attention.</p></div>
+      <div class="card"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4M7 10h2l2-3 2 6 2-3h2"/></svg></span><h3>Diagnostics and tune-ups</h3><p>Computer diagnostic scanning with regularly updated equipment to find faults quickly.</p></div>
+      <div class="card"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg></span><h3>Brakes</h3><p>Pads, rotors, fluid and inspections to keep you stopping safely.</p></div>
+      <div class="card"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span><h3>Transmission and clutch</h3><p>Transmission servicing and clutch repairs done properly.</p></div>
+      <div class="card"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/></svg></span><h3>Cooling, engine and exhaust</h3><p>Cooling systems, minor and major engine work, and exhaust repairs.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Choose one of our vehicle services</h2>
+      <p>Book online for a convenient time that suits you.</p>
+    </div>
+    <div class="pk">
+      <div class="card"><span class="tag">Standard service</span><h3>Express service package</h3>
+        <ul><li><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Premium brand consumables</li><li><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Economical choice</li></ul>
+        <p style="margin-top:18px"><a class="btn btn-primary" href="#book">Book a standard service</a></p></div>
+      <div class="card pop"><span class="tag">Premium service</span><h3>Most popular service</h3>
+        <ul><li><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Best value</li><li><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Comprehensive brake checks</li></ul>
+        <p style="margin-top:18px"><a class="btn btn-primary" href="#book">Book a premium service</a></p></div>
+    </div>
+    <p class="fine">Pricing for vehicle servicing may vary depending on make and model, fuel type, vans and 4WDs, as some vehicles require more consumables than others, such as oil and filters.</p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <span class="eyebrow" style="color:var(--accent-deep)">About us</span>
+      <h2>Your local family-run garage</h2>
+      <p>Run by Ash in the workshop and Sangita in the office, we provide great mechanical service to a superior standard, right here on Karepiro Drive. Our mechanics are regularly trained to keep up with the latest automotive technology, and our diagnostic scanning equipment is kept up to date too.</p>
+      <p>We prioritise communication, so you stay up to date with your vehicle's progress while it is in our workshop, and you can pick it up as soon as it is ready.</p>
+      <div class="ticks">
+        <div><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Dealership quality workmanship, guaranteed</div>
+        <div><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>All makes and models, including European cars</div>
+        <div><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Free courtesy cars and early drop-offs</div>
+      </div>
+    </div>
+    <div class="quotes">
+      <div class="quote"><span class="stars" aria-label="5 stars">★★★★★</span><p>"We have been trusting Ash and his team with the care of our cars for many years now. They are always able to sort problems quickly, with clear explanation and great workmanship."</p><cite>KATE, STANMORE BAY</cite></div>
+      <div class="quote"><span class="stars" aria-label="5 stars">★★★★★</span><p>"I like that if there are any issues they call to discuss options and pricing so there are no surprises when I pick the car up."</p><cite>TRACEY, ARKLES BAY</cite></div>
+      <div class="quote"><span class="stars" aria-label="5 stars">★★★★★</span><p>"After 4 years as a customer, they are still my first call for all my car care and that of my immediate family and close friends."</p><cite>DAVID, AUCKLAND</cite></div>
+    </div>
+  </div>
+</section>
+
+<section id="book" class="book">
+  <div class="wrap book-grid">
+    <div class="book-copy">
+      <span class="eyebrow" style="color:var(--accent-deep)">Online booking</span>
+      <h2>Book your vehicle in</h2>
+      <p>Tell us about you and your vehicle, pick a day that suits, and we will confirm your booking.</p>
+      <div class="steps">
+        <div class="step"><span class="n">1</span><div><b>Send your booking</b><span>Your details go straight into our workshop system.</span></div></div>
+        <div class="step"><span class="n">2</span><div><b>We confirm with you</b><span>Our office will be in touch to confirm the time.</span></div></div>
+        <div class="step"><span class="n">3</span><div><b>Drop off and relax</b><span>Early drop-offs and courtesy cars available.</span></div></div>
+      </div>
+      <div class="call"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><div><div style="font-size:13px;color:var(--muted)">Prefer to talk it through?</div><a href="tel:094244294">09 424 4294</a></div></div>
+    </div>
+    <div class="book-card">
+      <h3>Book a service</h3>
+      <p class="sub">Whangaparaoa Autocentre · Stanmore Bay</p>
+      <iframe id="wac-booking" src="https://app.thogits.com/p/01M716KRE00E3DE1BT78NJK73E?embed=1" style="width:100%;border:0" loading="lazy" title="Book your vehicle in"></iframe>
+      <p class="note">Secure booking form powered by Thogits</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="alt">
+  <div class="wrap">
+    <div class="sec-head"><h2>Find us on Karepiro Drive</h2><p>Based in Stanmore Bay, serving the Whangaparāoa Peninsula and the Hibiscus Coast.</p></div>
+    <div class="contact">
+      <div class="info">
+        <div class="row"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><div><b>Workshop</b>Unit 1, 8 Karepiro Drive<br>Stanmore Bay, Auckland 0932</div></div>
+        <div class="row"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><div><b>Phone</b><a href="tel:094244294">09 424 4294</a></div></div>
+        <div class="row"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span><div><b>Email</b><a href="mailto:wgpautocentre@gmail.com">wgpautocentre@gmail.com</a></div></div>
+      </div>
+      <div class="map"><iframe title="Map: Unit 1, 8 Karepiro Drive, Stanmore Bay" loading="lazy" src="https://www.google.com/maps?q=8+Karepiro+Drive,+Stanmore+Bay,+Auckland+0932,+New+Zealand&amp;output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:#fff">Whangaparaoa Autocentre</strong> · Unit 1, 8 Karepiro Drive, Stanmore Bay, Auckland 0932 · <a href="tel:094244294">09 424 4294</a></div>
+    <div class="built">Built by Thogits for Whangaparaoa Autocentre</div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var frame = document.getElementById("wac-booking");
+  if (!frame) return;
+  frame.style.minHeight = "900px";
+  window.addEventListener("message", function (e) {
+    if (!frame.contentWindow || e.source !== frame.contentWindow) return;
+    var d = e.data;
+    if (!d || d.type !== "thogits-embed-height") return;
+    var h = Number(d.height);
+    if (!isFinite(h) || h < 120 || h > 6000) return;
+    frame.style.minHeight = "0";
+    frame.style.height = Math.ceil(h) + "px";
+  });
+})();
+</script>
+</body>
+</html>
