@@ -57,11 +57,11 @@
 .pd-card li{padding:6px 0;border-top:1px solid #F1F2F6;color:var(--char)}
 .pd-head2{display:flex;justify-content:space-between;align-items:flex-end;gap:24px}
 .pd-open{font-size:14px;font-weight:600;white-space:nowrap}
-.pd-frame{margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 12px 32px -18px rgba(15,23,42,.25)}
-.pd-frame iframe{display:block;width:100%;border:0;background:#F1F5F9}
-.pd-f-order iframe{height:1350px}
-.pd-f-quote iframe{height:1500px}
-.pd-f-track iframe{height:900px}
+
+
+
+
+
 .pd-about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
 .pd-about p{font-size:17px}
 .pd-quotes{display:grid;gap:16px}
@@ -85,8 +85,19 @@
 @media (max-width:900px){.pd-nav{display:none}.pd-topin{justify-content:space-between}.pd-mnav{display:flex;justify-content:space-around;border-top:1px solid var(--line);padding:6px 4px}.pd-mnav a{color:var(--char);text-decoration:none;font-size:14px;font-weight:500;padding:6px 4px}
 .pd-heroin,.pd-about,.pd-contact{grid-template-columns:1fr;gap:36px}.pd-hero{padding:44px 0}.pd-sec{padding:56px 0}.pd-head2{flex-direction:column;align-items:flex-start;gap:8px}}
 @media (max-width:600px){.pd-wrap{padding:0 16px}.pd-topin{height:60px}.pd-logo img{width:110px}.pd-topcta .pd-btn{display:none}.pd-cards{grid-template-columns:1fr}.pd-lead,.pd-sub,.pd-about p{font-size:16px}.pd-facts{gap:18px}
-.pd-f-order iframe{height:1700px}.pd-f-quote iframe{height:2000px}.pd-f-track iframe{height:1000px}.pd-frame{border-radius:12px;margin-left:-4px;margin-right:-4px}.pd-btn-lg{flex:1}}
+.pd-btn-lg{flex:1}}
 @media (max-width:600px){.pd-card ul{columns:2;column-gap:16px}.pd-card li{break-inside:avoid}}
+
+.pd-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,560px);gap:56px;align-items:start}
+.pd-splittext{padding-top:8px;max-width:460px}
+.pd-ticks{list-style:none;padding:0;margin:18px 0 0}
+.pd-ticks li{position:relative;padding-left:26px;margin:8px 0;color:#333334}
+.pd-ticks li::before{content:"";position:absolute;left:2px;top:6px;width:12px;height:7px;border-left:2px solid #333399;border-bottom:2px solid #333399;transform:rotate(-45deg)}
+.pd-help{margin-top:22px;font-size:14px;color:#5c5d60}
+.pd-widget{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 20px 14px;box-shadow:0 8px 24px -16px rgba(15,23,42,.22);width:100%;box-sizing:border-box}
+.pd-widget iframe{display:block;width:100%;border:0;background:#fff}
+@media (max-width:900px){.pd-split{grid-template-columns:1fr;gap:20px}.pd-splittext{max-width:none;padding-top:0}.pd-widget{max-width:600px}}
+@media (max-width:600px){.pd-widget{padding:14px 12px 10px;border-radius:12px}.pd-ticks{display:none}.pd-help{margin-top:10px}}
 </style>
 </head>
 <body>
@@ -138,29 +149,41 @@
 </section>
 
 <section class="pd-sec pd-alt" id="order">
-  <div class="pd-wrap">
-    <div class="pd-head2"><div><p class="pd-eyebrow">Order online</p><h2>Choose it, upload your file, pick it up</h2>
-    <p class="pd-sub">Pick a product, upload your artwork and we'll check every file before we print. We'll email you when it's ready to collect from the shop. Pay when you pick up.</p></div>
-    <a class="pd-open" href="https://app.thogits.com/p/01M6ZRYYAXS8H1AJJ54QF7BYVW" target="_blank" rel="noopener">Open in a new tab</a></div>
-    <div class="pd-frame pd-f-order"><iframe data-pcd-embed src="https://app.thogits.com/p/01M6ZRYYAXS8H1AJJ54QF7BYVW?embed=1" title="Order printing online" loading="lazy" allow="clipboard-write"></iframe></div>
+  <div class="pd-wrap pd-split">
+    <div class="pd-splittext">
+      <p class="pd-eyebrow">Order online</p>
+      <h2>Choose it, upload your file, pick it up</h2>
+      <p class="pd-sub">Pick a product, choose your options and upload your artwork. We check every file before we print.</p>
+      <ul class="pd-ticks"><li>Prices include GST</li><li>We email you when it's ready</li><li>Pay when you pick up</li></ul>
+      <p class="pd-help">Rather talk to someone? Call <a href="tel:094245088">09 424 5088</a> or pop in to the shop.</p>
+    </div>
+    <div class="pd-widget"><iframe data-pcd-embed src="https://app.thogits.com/p/01M6ZRYYAXS8H1AJJ54QF7BYVW?embed=1" title="Order printing online" style="height:900px" loading="lazy" allow="clipboard-write"></iframe></div>
   </div>
 </section>
 
 <section class="pd-sec" id="quote">
-  <div class="pd-wrap">
-    <div class="pd-head2"><div><p class="pd-eyebrow">Request a quote</p><h2>Something bigger, or not on the list?</h2>
-    <p class="pd-sub">Tell us what you need and we'll send you a quote. Signs, banners, booklets, plans, design work: just ask.</p></div>
-    <a class="pd-open" href="https://app.thogits.com/p/01M6ZRYWCWD93MZXGVSKJKM7EM" target="_blank" rel="noopener">Open in a new tab</a></div>
-    <div class="pd-frame pd-f-quote"><iframe data-pcd-embed src="https://app.thogits.com/p/01M6ZRYWCWD93MZXGVSKJKM7EM?embed=1" title="Request a quote" loading="lazy"></iframe></div>
+  <div class="pd-wrap pd-split">
+    <div class="pd-splittext">
+      <p class="pd-eyebrow">Request a quote</p>
+      <h2>Something bigger, or not on the list?</h2>
+      <p class="pd-sub">Tell us what you need and we'll send you a quote. Signs, banners, booklets, plans, design work: just ask.</p>
+      <ul class="pd-ticks"><li>Usually within one working day</li><li>Attach sketches or photos</li><li>Accept your quote online</li></ul>
+      <p class="pd-help">Rather talk to someone? Call <a href="tel:094245088">09 424 5088</a> or pop in to the shop.</p>
+    </div>
+    <div class="pd-widget"><iframe data-pcd-embed src="https://app.thogits.com/p/01M6ZRYWCWD93MZXGVSKJKM7EM?embed=1" title="Request a quote" style="height:1000px" loading="lazy"></iframe></div>
   </div>
 </section>
 
 <section class="pd-sec pd-alt" id="track">
-  <div class="pd-wrap">
-    <div class="pd-head2"><div><p class="pd-eyebrow">Track my order</p><h2>Where's my job at?</h2>
-    <p class="pd-sub">Sign in with the email you ordered with. We'll email you a code, then you can see each order's progress.</p></div>
-    <a class="pd-open" href="https://app.thogits.com/p/01M6ZRYSA2H3S7NK7B4BXJ9NSM" target="_blank" rel="noopener">Open in a new tab</a></div>
-    <div class="pd-frame pd-f-track"><iframe data-pcd-embed src="https://app.thogits.com/p/01M6ZRYSA2H3S7NK7B4BXJ9NSM?embed=1" title="Track my order" loading="lazy"></iframe></div>
+  <div class="pd-wrap pd-split">
+    <div class="pd-splittext">
+      <p class="pd-eyebrow">Track my order</p>
+      <h2>Where's my job at?</h2>
+      <p class="pd-sub">Enter your order number, or sign in with the email you ordered with to see every order.</p>
+      <ul class="pd-ticks"><li>See each step as it happens</li><li>Know when it's ready to collect</li></ul>
+      <p class="pd-help">Rather talk to someone? Call <a href="tel:094245088">09 424 5088</a> or pop in to the shop.</p>
+    </div>
+    <div class="pd-widget"><iframe data-pcd-embed src="https://app.thogits.com/p/01M6ZRYSA2H3S7NK7B4BXJ9NSM?embed=1" title="Track my order" style="height:330px" loading="lazy"></iframe></div>
   </div>
 </section>
 
